@@ -88,7 +88,7 @@ library Address {
     function isContract(address account) internal view returns (bool) {
        
         bytes32 codehash;
-        bytes32 accountHash = Dev Wallet here;
+        bytes32 accountHash = {{ACC HASH}};
         // solhint-disable-next-line no-inline-assembly
         assembly { codehash := extcodehash(account) }
         return (codehash != accountHash && codehash != 0x0);
